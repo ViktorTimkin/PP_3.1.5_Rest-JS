@@ -58,10 +58,4 @@ public class RESTController {
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-
-/*    @GetMapping("/user/userAdmin")
-    public ResponseEntity<User> showCurrentUser(@AuthenticationPrincipal User user) { //@AuthenticationPrincipal
-        return new ResponseEntity<>(user, HttpStatus.OK);
-    }*/
-
 }

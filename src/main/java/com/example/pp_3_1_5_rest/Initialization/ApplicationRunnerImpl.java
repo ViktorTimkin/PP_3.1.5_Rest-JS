@@ -36,22 +36,4 @@ public class ApplicationRunnerImpl {
         userService.addUser(new User("admin", ("admin"), adminRole));
         userService.addUser(new User("user", ("user"), userRole));
     }
-
-    /*@Override
-    public void run(ApplicationArguments args) {
-        List<User> users = userService.getAllUsers();
-        if (users.isEmpty()) {
-            roleService.addRole(new Role("ROLE_ADMIN"));
-            roleService.addRole(new Role("ROLE_USER"));
-            Role admin = roleService.getRoleById(1L);
-            Role user = roleService.getRoleById(2L);
-            Set<Role> adminRole = new HashSet<>();
-            Set<Role> userRole = new HashSet<>();
-            adminRole.add(admin);
-            userRole.add(user);
-            userService.addUser(new User("admin", ("admin"), adminRole));
-            userService.addUser(new User("user", ("user"), userRole));
-        }
-    }*/
-
 }

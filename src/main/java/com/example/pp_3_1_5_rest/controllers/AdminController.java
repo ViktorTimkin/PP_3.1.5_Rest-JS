@@ -34,35 +34,4 @@ public class AdminController {
         return "admin";
     }
 
-
-
-/*    @PostMapping("/add")
-    public String createUser(@ModelAttribute("user") User user,
-                             @RequestParam("role") String role) {
-        if(role.equals("ROLE_USER")) {
-            user.setRoles(Set.of(roleService.getRoleById(2L)));
-        } else if(role.equals("ROLE_ADMIN")) {
-            user.setRoles(Set.of(roleService.getRoleById(1L)));
-        }
-        userService.addUser(user);
-        return "redirect:/admin"; // /admin_panel
-    }
-
-    @PatchMapping("/edit/{id}")
-    public String userUpdate(@ModelAttribute("user") User user, @RequestParam("role") String role) {
-
-        if(role.equals("ROLE_USER")) {
-            user.setRoles(Set.of(roleService.getRoleById(2L)));
-        } else if(role.equals("ROLE_ADMIN")) {
-            user.setRoles(Set.of(roleService.getRoleById(1L)));
-        }
-        userService.editUser(user);
-        return "redirect:/admin"; // /admin_panel
-    }
-
-    @DeleteMapping("/delete/{id}")
-    public String delete(@PathVariable("id") Long id) {
-        userService.deleteUser(id);
-        return "redirect:/admin";//  /admin_panel
-    }*/
 }

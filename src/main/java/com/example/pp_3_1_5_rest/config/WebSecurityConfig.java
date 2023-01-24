@@ -18,7 +18,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private final BCryptPasswordEncoder passwordEncoder;
     private final UserService userService;
 
-    @Autowired
+
     public WebSecurityConfig(SuccessUserHandler successUserHandler,
                              BCryptPasswordEncoder passwordEncoder,
                              UserService userService) {
